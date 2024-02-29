@@ -8,8 +8,6 @@ app.get("/", (req, res) => {
   console.log(req.protocol);
   console.log(req.originalUrl);
   console.log(subdomain);
-  const hostname = `${req.protocol}://${req.hostname}`;
-  const split = hostname.split(".");
   res.send("Domain is ", subdomain);
 });
 
