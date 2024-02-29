@@ -8,7 +8,7 @@ app.get("/", (req, res) => {
   console.log(req.protocol);
   console.log(req.originalUrl);
   console.log(subdomain);
-  res.send("Domain is ", subdomain);
+  res.send(`domain is ${subdomain}`);
 });
 
 app.listen(port, () => {
